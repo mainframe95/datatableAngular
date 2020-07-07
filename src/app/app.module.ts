@@ -1,19 +1,23 @@
+import { ParticuleJsComponent } from './particule-js/particule-js.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {DataTablesModule} from 'angular-datatables';
+import { ParticlesModule } from 'angular-particle';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParticuleJsComponent
   ],
   imports: [
     BrowserModule,
-    DataTablesModule
+    DataTablesModule,
+    ParticlesModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ParticuleJsComponent]
 })
 export class AppModule { }
